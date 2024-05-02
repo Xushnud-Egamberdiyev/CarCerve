@@ -7,6 +7,7 @@ import { UslugaComponent } from './companenta/usluga/usluga.component';
 import { GlavniComponent } from './companenta/glavni/glavni.component';
 import { NavbarComponent } from './companenta/navbar/navbar.component';
 import { HammaServicelarComponent } from './companenta/hamma-servicelar/hamma-servicelar.component';
+import { FooterComponent } from './companenta/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HammaServicelarComponent } from './companenta/hamma-servicelar/hamma-se
     UslugaComponent,
     GlavniComponent,
     NavbarComponent,
-    HammaServicelarComponent
+    HammaServicelarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
