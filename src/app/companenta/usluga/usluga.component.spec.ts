@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { UslugaComponent } from './usluga.component';
+import { NgOptimizedImage } from '@angular/common'
 
 describe('UslugaComponent', () => {
   let component: UslugaComponent;
