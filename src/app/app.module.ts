@@ -10,6 +10,7 @@ import { HammaServicelarComponent } from './companenta/hamma-servicelar/hamma-se
 import { KategoriyaComponent } from './companenta/glavni/glavniComent/kategori/kategoriya/kategoriya.component';
 import { BrendPloshadki1920Component } from './companenta/brend-ploshadki-1920/brend-ploshadki-1920.component';
 import { KartochkaBrendComponent } from './companenta/kartochka-brend/kartochka-brend.component';
+import { FooterComponent } from './companenta/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { KartochkaBrendComponent } from './companenta/kartochka-brend/kartochka-
     KategoriyaComponent,
     BrendPloshadki1920Component,
     KartochkaBrendComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
