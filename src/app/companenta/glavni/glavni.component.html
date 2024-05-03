@@ -8,8 +8,23 @@
         <img style="margin-top: 22px;" src="/assets/images/glavni/plus.svg" alt="">
 </div>
 <hr style="margin-top: 1%;">
-<div>
-    <img style="text-align: center; width: 940px; height: 320px; margin-left: 19.3%; margin-top: 20px;" src="/assets/images/glavni/image (2).jpg" alt="">
+<div class="navbar-main">
+    <h3 style="color: white; margin-left: 20px; font-size: 35px;">Подберём лучший автосервис <br> за 7 минут</h3>
+    <div style="background-color: #DB4661;display: inline-block; color: white; width: 91px; height: 17px;margin-left: 20px;text-align: center;margin-top: 35px;">
+        <p style="font-size: 11px;">Это бесплатно</p></div>
+
+    <div>
+        <div class="malumotlar">
+            <div style="background-color: #DB4661;border-radius: 30px; color: white; margin-left: 5px; width: 50px; height: 37px; margin-top: 3px;"><p style="text-align: center;">Все</p></div>
+            <p>Диагностика</p>
+            <p>Техническое обслуживание</p>
+            <p>Тормозная система</p>
+            <p>Трансмиссия</p>
+            <p>Подвеска</p>
+            <p>Электрика</p>
+            
+        </div>
+    </div>
 </div>
 <h3 style="width:384px; height:34px; margin-top: 30px; font-size: 22px; margin-left: 19.1%;">Как проходит ремонт</h3>
 
@@ -59,8 +74,8 @@
 <div>
     <h2 style="width: 694px; height: 34px; font-size: 22px; margin-left: 19.1%;margin-top: 30px;">Подберём сервис за 7 минут. Просто заполни форму</h2>
 </div>
-<div class="body2">
-    <div class="qator2">
+<div class="body3">
+    <div class="qator1">
         <input style="border: none; border-radius: 5px;" type="text" placeholder="Имя">
         <input style="border: none; border-radius: 5px;" type="text" placeholder="+7 (___) ___-__-__">
         <select class="form-select" id="inputGroupSelect01">
@@ -77,25 +92,29 @@
         </select>
     </div>
     <div>
-        <div>
-            <select style="margin-top: 10px;" class="form-select" id="inputGroupSelect01">
-                <option selected>Год выпуска</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-            <select style="margin-top: 10px; margin-left: px; margin-right: 15px;" class="form-select" id="inputGroupSelect01">
-                <option selected>VIN-код</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-        </div>
-          <input type="text" placeholder="Опишите проблему?">
-          <div style="width: 375px;height: 18px;margin-left: 290px; margin-top: 10px;">
+        <select style="width: 99%;margin-left: 5px; margin-top: 10px;" class="form-select" id="inputGroupSelect01">
+            <option selected>Год выпуска</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+        <select style="width: 99%;margin-left: 5px; margin-top: 10px;" class="form-select" id="inputGroupSelect01">
+            <option selected>VIN-код</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+        <input class="koment" type="text" placeholder="Опишите проблему?">
+        <div style="width: 375px;height: 18px;margin-left: 290px; margin-top: 10px;">
             <p style="font-size: 13px;">Я соглашаюсь с <a href="">условиями обработки персональных данных</a></p>
         </div>
         <button style="border: none; border-radius: 5px;background-color:#6081D2;color: white; width: 200px;height: 35px; margin-left: 350px; margin-top: 10px;">
             <p style="font-size: 14px;margin-top: 4px;">Получите предложения СТО</p></button>
     </div>
 </div>
+
+
+<app-kategoriya></app-kategoriya>
+
+
+
