@@ -23,7 +23,7 @@ const routes: Routes = [
   {path : '', component: GlavniComponent},
   {path: 'glavni', component: GlavniComponent},
   {path:'usluga',component: UslugaComponent},
-  {path:'services',component:HammaServicelarComponent},
+  {path:' ',component:HammaServicelarComponent},
   {path: 'navbar', component: NavbarComponent},
   {path: 'ploshadki', component: BrendPloshadki1920Component},
   {path: 'kartochka-brend', component: KartochkaBrendComponent},
