@@ -20,6 +20,10 @@ import { InfoComponent } from './companenta/info/info.component';
 import { CommentsComponent } from './companenta/comments/comments.component';
 import { MyAutoComponent } from './companenta/my-auto/my-auto.component';
 import { PersInfoComponent } from './companenta/pers-info/pers-info.component';
+import { SuccessComponent } from './companenta/success/success.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { NotfoundComponent } from './companenta/notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -42,12 +46,16 @@ import { PersInfoComponent } from './companenta/pers-info/pers-info.component';
     CommentsComponent,
     MyAutoComponent,
     PersInfoComponent,
+    SuccessComponent,
+    NotfoundComponent,
     
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
