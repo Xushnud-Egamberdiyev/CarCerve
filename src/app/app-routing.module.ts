@@ -19,12 +19,15 @@ import { CommentsComponent } from './companenta/comments/comments.component';
 import { MyAutoComponent } from './companenta/my-auto/my-auto.component';
 import { PersInfoComponent } from './companenta/pers-info/pers-info.component';
 import { NotFound404Component } from './companenta/not-found404/not-found404.component';
+import { SuccessComponent } from './companenta/success/success.component';
+import { NotfoundComponent } from './companenta/notfound/notfound.component';
+
 
 const routes: Routes = [
   {path : '', component: GlavniComponent},
   {path: 'glavni', component: GlavniComponent},
   {path:'usluga',component: UslugaComponent},
-  {path:' ',component:HammaServicelarComponent},
+  {path:' ',component:NotfoundComponent},
   {path: 'navbar', component: NavbarComponent},
   {path: 'ploshadki', component: BrendPloshadki1920Component},
   {path: 'kartochka-brend', component: KartochkaBrendComponent},
@@ -39,8 +42,10 @@ const routes: Routes = [
   {path: 'comments', component: CommentsComponent},
   {path: 'myAuto', component: MyAutoComponent},
   {path: 'persInfo', component: PersInfoComponent},
-  {path: '404', component: NotFound404Component},
   {path: '**', component: NotFound404Component},
+  {path: 'succes', component: SuccessComponent},
+  {path: "notfound", component: NotfoundComponent},
+  {path: '**', component: NotfoundComponent},
 ];
 
 @NgModule({

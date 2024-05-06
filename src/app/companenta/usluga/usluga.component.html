@@ -41,101 +41,31 @@
         <h1>Подберём сервис за 7 минут. Просто заполни форму</h1>
 
         <div class=" bg-gray p-4 br-5">
-            <form action="">
-                <div class="grid-4">
-                    <input class="p-2 form1-input gray" type="text" placeholder="Имя">
-
-                    <input class="p-2 form1-input gray" type="text" placeholder="+7 (___) ___-__-__">
-
-
-                    <select class="form-select" name="Марка " id="">
-                        <option value="">
-                            Марка
-                        </option>
-
-                        <option value="">
-                            Марка
-                        </option>
-                    </select>
-
-
-
-                    <select class="form-select" name="Модель" id="">
-                        <option value="">
-                            Модель
-                        </option>
-
-                        <option value="">
-                            Модель
-                        </option>
-                    </select>
-
+            <form [formGroup]="form111" (ngSubmit)="onSubmit()">
+                <input type="text" placeholder="Имя" formControlName="name" style="border: none; border-radius: 5px;">
+                <input type="text" placeholder="Номер" formControlName="phone" style="border: none; border-radius: 5px;">
+                <select class="form-select" formControlName="brand">
+                    <option value="">Марка</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <select class="form-select" formControlName="model">
+                    <option value="">Модель</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <input type="text" placeholder="Комментарий" formControlName="comment" class="koment">
+                <div style="width: 375px; height: 18px; margin-left: 290px; margin-top: 10px;">
+                    <p style="font-size: 13px;">Я соглашаюсь с <a href="">условиями обработки персональных данных</a></p>
                 </div>
-
-
-
-                <div class="pt-3 d-flex gap-3">
-
-                    <div class="w-250">
-                        <select class="form-select mb-3" name="Марка " id="">
-                            <option value="">
-                                Год выпуска
-                            </option>
-
-                            <option value="">
-                                2022
-                            </option>
-                        </select>
-
-
-
-                        <select class="form-select" name="Модель" id="">
-                            <option value="">
-                                VIN-код
-                            </option>
-
-                            <option value="">
-                                Модель
-                            </option>
-                        </select>
-                    </div>
-
-                    <div class="w-100">
-
-
-                        <textarea name="" id="" rows="4" cols="50" class="w-100 height-86 ps-3 pt-1"
-                            placeholder="Опишите проблему ?"></textarea>
-
-                    </div>
-
-                </div>
-
-                <div class=" pt-3 center">
-                    <div class="d-flex gap-3">
-                        <input type="checkbox">
-
-                        <p class="m-0">Я соглашаюсь с <p class="text-decoration-underline m-0 text-blue"> условиями
-                                обработки персональных данных</p>
-                        
-                    </div>
-
-
-                </div>
-
-                <div class=" pt-3 center">
-
-
-                    <button type="submit" class="btn-blue">
-
-                        Получите предложения СТО
-
-                    </button>
-                </div>
-
-
+                <button type="submit" style="border: none; border-radius: 5px; background-color:#6081D2; color: white; width: 200px; height: 35px; margin-left: 350px; margin-top: 10px;">
+                    <p style="font-size: 14px; margin-top: 4px;">Получите предложения СТО</p>
+                </button>
             </form>
-
-
+              
+              
         </div>
 
 
