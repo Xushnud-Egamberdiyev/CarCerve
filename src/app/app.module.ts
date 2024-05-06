@@ -50,6 +50,7 @@ import { NotfoundComponent } from './companenta/notfound/notfound.component';
     NotfoundComponent,
     
     
+    
   ],
   imports: [
     BrowserModule,
