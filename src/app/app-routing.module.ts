@@ -22,7 +22,7 @@ import { SuccessComponent } from './companenta/success/success.component';
 import { NotfoundComponent } from './companenta/notfound/notfound.component';
 
 const routes: Routes = [
-  {path : '', component: NotfoundComponent},
+  {path : '', component: GlavniComponent},
   {path: 'glavni', component: GlavniComponent},
   {path:'usluga',component: UslugaComponent},
   {path:' ',component:NotfoundComponent},

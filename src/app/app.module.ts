@@ -22,7 +22,7 @@ import { MyAutoComponent } from './companenta/my-auto/my-auto.component';
 import { PersInfoComponent } from './companenta/pers-info/pers-info.component';
 import { SuccessComponent } from './companenta/success/success.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NotfoundComponent } from './companenta/notfound/notfound.component';
 
 @NgModule({
@@ -56,7 +56,8 @@ import { NotfoundComponent } from './companenta/notfound/notfound.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
