@@ -18,8 +18,10 @@ import { InfoComponent } from './companenta/info/info.component';
 import { CommentsComponent } from './companenta/comments/comments.component';
 import { MyAutoComponent } from './companenta/my-auto/my-auto.component';
 import { PersInfoComponent } from './companenta/pers-info/pers-info.component';
+import { NotFound404Component } from './companenta/not-found404/not-found404.component';
 import { SuccessComponent } from './companenta/success/success.component';
 import { NotfoundComponent } from './companenta/notfound/notfound.component';
+
 
 const routes: Routes = [
   {path : '', component: GlavniComponent},
@@ -40,6 +42,7 @@ const routes: Routes = [
   {path: 'comments', component: CommentsComponent},
   {path: 'myAuto', component: MyAutoComponent},
   {path: 'persInfo', component: PersInfoComponent},
+  {path: '**', component: NotFound404Component},
   {path: 'succes', component: SuccessComponent},
   {path: "notfound", component: NotfoundComponent},
   {path: '**', component: NotfoundComponent},
